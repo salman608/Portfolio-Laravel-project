@@ -78,7 +78,7 @@
 						<li><a href="#" data-nav-section="experience">Experience</a></li>
 						<li><a href="#" data-nav-section="skills">Skills</a></li>
 						<li><a href="#" data-nav-section="education">Education</a></li>
-						<li><a href="#" data-nav-section="work">Work</a></li>
+
 						<li><a href="#" data-nav-section="services">Services</a></li>
 
 
@@ -90,7 +90,7 @@
 
 			<div class="colorlib-footer">
 				<p><small>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> <span style="color:white;"> All rights reserved | This Portfolio made by</span><i class="icon-heart" aria-hidden="true"></i><a href="#" target="_blank">Mahadi</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> <span style="color:white;"> All rights reserved | This Portfolio made by</span><i class="icon-heart" aria-hidden="true"></i><a href="#" target="_blank">Mahmud Mahadi</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 				<ul>
 					<li><a style="color:white;" href="#"><i class="icon-facebook2"></i></a></li>
@@ -103,10 +103,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> <span
 		</aside>
 
 		<div id="colorlib-main">
-			<section id="colorlib-hero" class="js-fullheight" data-section="home">
+			<section id="colorlib-hero" class="js-fullheight" data-section="home" style="height:400px;">
 				<div class="flexslider js-fullheight">
-					<ul class="slides">
-				   	<li style="background-image: url(frontend/images/img_bg_5.jpeg);">
+					<ul class="slides" style="height:400px;">
+				   	<li style="background-image: url(frontend/images/img_bg_5.jpeg);background-size: cover;height:550px;">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">
@@ -122,16 +122,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> <span
 					   		</div>
 				   		</div>
 				   	</li>
-				   	<li style="background-image: url(frontend/images/img_bg_6.jpg);">
+				   	<li style="background-image: url(frontend/images/img_bg_6.jpeg);background-size: cover;height:550px;">
 				   		<div class="overlay"></div>
 				   		<div class="container-fluid">
 				   			<div class="row">
 					   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
 					   				<div class="slider-text-inner">
-					   					<div class="desc">
-						   					<h1>I am <br>a Designer</h1>
 
-											</div>
 					   				</div>
 					   			</div>
 					   		</div>
@@ -148,11 +145,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> <span
 							<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
 								<div class="col-md-12">
 									<div class="about-desc">
-										<span class="heading-meta">About Us</span>
+										<span class="heading-meta">About Me</span>
 										@foreach ($about as $about)
 
 
+
 										<h2 class="colorlib-heading">{{ $about->title }}</h2>
+
+										<div class="video" style="margin:auto;width:600px;">
+											<iframe width="560" height="315"  src="https://www.youtube.com/embed/todkJV5DK3A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										</div>
+
 										<p><strong>Hi I'm {{ $about->name }}</strong>{{ $about->body }}</p>
 
 										@endforeach
@@ -325,58 +328,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> <span
 							</div>
 						</section>
 
-			<section class="colorlib-work" data-section="work">
-			 				<div class="colorlib-narrow-content">
-			 					<div class="row">
-			 						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-			 							<span class="heading-meta">My Work</span>
-			 							<h2 class="colorlib-heading animate-box">MY Goal</h2>
-			 						</div>
-			 					</div>
-			 					<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
-			 						{{-- <div class="col-md-12">
-			 							<p class="work-menu"><span><a href="#" class="active">Graphic Design</a></span> <span><a href="#">Web Design</a></span> <span><a href="#">Software</a></span> <span><a href="#">Apps</a></span></p>
-			 						</div> --}}
-			 					</div>
-			 					<div class="row">
-			 						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-			 							<div class="project" style="background-image: url(frontend/images/img-1.jpg);">
-			 								<div class="desc">
-			 									<div class="con">
-			 										<h3><a href="work.html">Work 01</a></h3>
-			 										<span>Website</span>
-			 										<p class="icon">
-			 											<span><a href="#"><i class="icon-share3"></i></a></span>
-			 											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-			 											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-			 										</p>
-			 									</div>
-			 								</div>
-			 							</div>
-			 						</div>
-			 						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-			 							<div class="project" style="background-image: url(frontend/images/img-2.jpg);">
-			 								<div class="desc">
-			 									<div class="con">
-			 										<h3><a href="work.html">Work 02</a></h3>
-			 										<span>Animation</span>
-			 										<p class="icon">
-			 											<span><a href="#"><i class="icon-share3"></i></a></span>
-			 											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-			 											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
-			 										</p>
-			 									</div>
-			 								</div>
-			 							</div>
-			 						</div>
 
-
-
-
-			 					</div>
-
-			 				</div>
-			 			</section>
 
 			<section class="colorlib-services" data-section="services">
 				<div class="colorlib-narrow-content">

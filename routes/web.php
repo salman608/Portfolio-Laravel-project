@@ -36,7 +36,7 @@ Auth::routes();
   Route::resource('/myskill','Admin\MyskillController');
   Route::resource('/education','Admin\EducationController');
   Route::resource('/experience','Admin\ExperienceController');
-  Route::resource('/myself','Admin\myselfController');
+  Route::resource('/myself','Admin\MyselfController');
   Route::resource('/profile','Admin\ProfileController');
 
 
