@@ -16,6 +16,11 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     public function __construct()
+     {
+         $this->middleware('auth');
+     }
     public function index()
     {
         $profiles=Profile::latest()->get();
@@ -44,7 +49,7 @@ class ProfileController extends Controller
             'name'=>'required',
             'position'=>'required',
             'company'=>'required',
-            
+
         ]);
 
         $image = $request->file('image');

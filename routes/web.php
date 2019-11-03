@@ -18,6 +18,7 @@
 Route::get('/','FrontendController@index');
 
 Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
 
 
 
@@ -38,6 +39,3 @@ Auth::routes();
   Route::resource('/experience','Admin\ExperienceController');
   Route::resource('/myself','Admin\MyselfController');
   Route::resource('/profile','Admin\ProfileController');
-
-
-Route::get('/home', 'HomeController@index')->name('home');
